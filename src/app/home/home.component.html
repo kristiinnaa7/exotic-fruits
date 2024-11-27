@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="container">
+      <div class="welcome">
+          <div class="home-image">
+            <img src="fruitt.jpg" />
+          </div>
+        
+        <div class="quote">
+          <p>"To savor a rare fruit is to taste the essence of a faraway land."</p>
+        </div>
+        <p>
+           Welcome to Exotic Fruits, your online marketplace for the most unique and flavorful fruits from around the world. 
+           Explore our curated collection of rare and exotic fruits, handpicked for their taste, quality, and freshness. Whether you're looking for a tropical delight or a new culinary adventure,
+           we’ve got something to excite your taste buds. Start your journey to discover nature’s best-kept secrets today!
+        </p>
+       
+        @if(!isLoggedIn) {
+        <div class="logged">
+          <ul>
+            <li>
+              <a routerLink="/login">
+                <i class="fas fa-sign-in-alt"></i>
+                Login
+              </a>
+            </li>
+            <li>
+              <a routerLink="/register">
+                <i class="fas fa-user-plus"></i>
+                Register
+              </a>
+            </li>
+          </ul>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+  
