@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-// import { ErrorComponent } from './error/error.component';
+import { ErrorComponent } from './error/error.component';
 import { LoginComponent } from './user/login/login.component';
 import { RegisterComponent } from './user/register/register.component';
 import { ProfileComponent } from './user/profile/profile.component';
@@ -35,8 +35,8 @@ export const routes: Routes = [
 //   { path: 'add-theme', component: AddThemeComponent, canActivate: [AuthGuard] },
   // End - Theme routing
 
-//   { path: '404', component: ErrorComponent },
-//   { path: '**', redirectTo: '/404' },
+  { path: '404', component: ErrorComponent },
+  { path: '**', redirectTo: '/404' },
 
 
  

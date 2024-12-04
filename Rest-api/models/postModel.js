@@ -14,9 +14,9 @@ const postSchema = new mongoose.Schema({
         type: ObjectId,
         ref: "User"
     },
-    themeId: {
+    fruitId: {
         type: ObjectId,
-        ref: "Theme"
+        ref: "Fruit"
     },
 }, { timestamps: { createdAt: 'created_at' } });
 
