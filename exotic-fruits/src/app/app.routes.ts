@@ -4,10 +4,11 @@ import { ErrorComponent } from './error/error.component';
 import { LoginComponent } from './user/login/login.component';
 import { RegisterComponent } from './user/register/register.component';
 import { ProfileComponent } from './user/profile/profile.component';
-// import { AddThemeComponent } from './theme/add-theme/add-theme.component';
+import { AddFruitComponent } from './fruit/add-fruit/add-fruit.component';
+import { AuthGuard } from './guards/auth.guard';
+import { AllFruitComponent } from './fruit/all-fruit/all-fruit.component';
 // import { MainComponent } from './main/main.component';
 // import { CurrentThemeComponent } from './theme/current-theme/current-theme.component';
-// import { AuthGuard } from './guards/auth.guard';
 
 
 export const routes: Routes = [
@@ -22,7 +23,7 @@ export const routes: Routes = [
 
   // Start - Theme routing
 //   {
-//     path: 'themes',
+//     path: 'fruits',
 //     children: [
 //       { path: '', component: MainComponent },
 //       {
@@ -32,7 +33,8 @@ export const routes: Routes = [
 //       },
 //     ],
 //   },
-//   { path: 'add-theme', component: AddThemeComponent, canActivate: [AuthGuard] },
+{path: 'fruits', component: AllFruitComponent},
+   { path: 'add-fruit', component: AddFruitComponent, canActivate: [AuthGuard] },
   // End - Theme routing
 
   { path: '404', component: ErrorComponent },

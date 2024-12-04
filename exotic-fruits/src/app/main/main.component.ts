@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-// import { PostsListComponent } from '../posts-list/posts-list.component';
-// import { ThemesListComponent } from '../theme/themes-list/themes-list.component';
 import { UserService } from '../user/user.service';
 import { HomeComponent } from '../home/home.component';
+import { AllFruitComponent } from '../fruit/all-fruit/all-fruit.component';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [ HomeComponent],
+  imports: [ HomeComponent, AllFruitComponent ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css',
 })

@@ -1,1 +1,58 @@
-<p>add-fruit works!</p>
+
+<div class="fruit-form-container">
+    <h2>Add Fruit</h2>
+    <form (ngSubmit)="addFruit(fruitForm)" #fruitForm="ngForm" class="fruit-form">
+      <div class="form-group">
+        <label for="name">Fruit Name</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          ngModel
+          #inputFruitName="ngModel"
+          placeholder="Enter fruit name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="origin">Origin</label>
+        <input
+          id="origin"
+          type="text"
+          name="origin"
+          ngModel
+          #inputFruitOrigin="ngModel"
+          placeholder="Enter origin"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea
+          id="description"
+          name="description"
+          ngModel
+          #inputFruitDescription="ngModel"
+          placeholder="Enter description"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        <input
+          id="image"
+          type="text"
+          name="image"
+          ngModel
+          #inputFruitImage="ngModel"
+          placeholder="Enter image URL"
+        />
+      </div>
+      <button type="submit" class="add-button" [disabled]="fruitForm.invalid">
+        Add Fruit
+      </button>
+    </form>
+      </div>
+   
+ 
+ 
+
