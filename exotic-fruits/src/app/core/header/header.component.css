@@ -3,7 +3,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center; 
-  /* padding: 10px 0; */
   border-bottom: 1px solid #d3c4bd;
   max-width: 1400px;
   margin: 0 auto;
@@ -37,6 +36,7 @@ header .panel ul li a{
   text-decoration: none;
   color: #df4441;
   font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   transition: color 0.3s ease;
   text-shadow: 
     -1px -1px 0 black, 

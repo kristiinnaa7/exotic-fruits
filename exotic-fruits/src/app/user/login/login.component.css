@@ -1,15 +1,25 @@
+.tetris img{
+  position: absolute;
+  right: 30px;
+  width: 250px;
+}
+.tetris2 img{
+  position: absolute;
+  width: 250px;
+  left: -30px;
+}
 .container {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 600px;
+  margin: 50px auto;
   display: flex; 
   flex-direction: column; 
   align-items: center; 
   text-align: center; 
-  background-color: #a7d59b;
+  background-color: #e0c88e;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: #333;
-  border-radius: 10px;
+
 }
 
 .background-img img{
@@ -20,16 +30,14 @@
 
 form.login,
 form.register {
-  width: 600px; 
+  width: 520px; 
   margin: 0 auto; 
   background-color: #e4e3e3;
-  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .login fieldset,
 .register fieldset {
-  border-radius: 20px;
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
