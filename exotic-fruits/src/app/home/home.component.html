@@ -5,9 +5,7 @@
     </div>
     <div class="slogan">
       <div class="slogan-title">
-        <!-- <div class="star">
-          <img src="star.png" />
-        </div> -->
+    
         <p>DISCOVER NEW TASTE</p>
       </div>
       <p class="slogan-desc">
@@ -17,11 +15,20 @@
       <div class="slogan-img">
         <img src="6d49e0be84473fbcce8bad43d7d870c7.jpg">
       </div>
+      @if(!isLoggedIn){
+      <div class="recipes">
+        <li>
+          <a routerLink="/recipes">Recipes</a>
+        </li>
+        <li>
+          <a routerLink="/add-recipe">Add Recipe</a>
+        </li>
+
+      </div>
+    }
     </div>
   </div>
-  <!-- <div class="quote">
-        <p>"To savor a rare fruit is to taste the essence of a faraway land."</p>
-      </div> -->
+
   <div class="featured">
     <div class="img-container">
       <img src="background.jpg" />

@@ -5,19 +5,19 @@ const fruitSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
-    unique: true,  // Ensures each fruit has a unique name
+    unique: true,  
   },
   origin: {
     type: String,
-    required: true,  // Fruit's origin is a required field
+    required: true,  
   },
   description: {
     type: String,
-    required: true,  // Description of the fruit, required
+    required: true,  
   },
   image: {
-    type: String,  // URL or path for the fruit's image
-    required: false,  // Image is optional
+    type: String,  
+    required: false,  
   },
 
 }, { timestamps: { createdAt: 'created_at' } });

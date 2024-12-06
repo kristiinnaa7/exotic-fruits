@@ -5,13 +5,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Fruit } from '../../types/fruits';
 import { ApiService } from '../../api.service';
-import { RouterLink } from '@angular/router';
+
 
 
 @Component({
   selector: 'app-all-fruit',
   standalone: true,
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './all-fruit.component.html',
   styleUrl: './all-fruit.component.css'
 })
