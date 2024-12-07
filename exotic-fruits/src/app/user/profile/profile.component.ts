@@ -20,9 +20,9 @@ export class ProfileComponent {
   isEditMode: boolean = false;
 
   profileDetails: ProfileDetails = {
-    username: 'JohnDoe',
-    email: 'johndoe123@gmail.com',
-    tel: '123-123-213',
+    username: 'JackSmith',
+    email: 'jacksmith127@gmail.com',
+    tel: '885-888-888',
   };
 
   form = new FormGroup({

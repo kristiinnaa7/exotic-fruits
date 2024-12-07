@@ -26,7 +26,7 @@
           type="email"
           name="email"
           id="email"
-          placeholder="john.doe@gmail.com"
+          placeholder="jacksmith@gmail.com"
           ngModel
           #inputEmail="ngModel"
           required
@@ -71,7 +71,7 @@
         @if(inputPassword?.errors?.['required']){
         <p class="error">Password is required!</p>
         }
-        <!--  -->
+       
         @if(inputPassword?.errors?.['minlength']){
         <p class="error">Password must be at least 5 characters!</p>
         }

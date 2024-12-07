@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { ApiService } from '../../api.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -11,19 +12,17 @@ import { ApiService } from '../../api.service';
   styleUrl: './add-fruit.component.css'
 })
 export class AddFruitComponent {
-  constructor(private apiService: ApiService) {}
+  constructor(private apiService: ApiService, private router: Router) {}
 
   addFruit(form: NgForm) {
-    console.log(form);
 
     if (form.invalid) {
       return;
     }
 
-    console.log(form.value);
-
-    //  this.apiService.createTheme(themeName, postText).subscribe((data) => {
-    //    console.log(data);
-    //  });
+     const { name,  description } = form.value
+     this.apiService.createFruit(name,description).subscribe(() => {
+        this.router.navigate(['/fruits'])
+     });
 }
 }

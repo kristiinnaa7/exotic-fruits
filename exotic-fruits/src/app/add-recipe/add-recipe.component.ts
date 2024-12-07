@@ -20,9 +20,9 @@ export class AddRecipeComponent {
     }
 
     console.log(form.value);
-
-    //  this.apiService.createRecipe(recipeName, postText).subscribe((data) => {
-    //    console.log(data);
-    //  });
+    const {name, description} = form.value
+     this.apiService.createRecipe(name,description).subscribe((data) => {
+       console.log(data);
+     });
 }
 }

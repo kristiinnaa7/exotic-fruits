@@ -1,3 +1,4 @@
+const { log } = require('console');
 const { fruitModel } = require('../models');
 
 function getFruits(req, res, next) {
@@ -18,6 +19,7 @@ function createFruit(req, res, next) {
     const { name, origin, description } = req.body;
     const { _id: userId } = req.user;
 
+ 
     fruitModel.create({ name, origin, description, createdBy: userId })
         .then(fruit => res.status(200).json(fruit))
         .catch(next);

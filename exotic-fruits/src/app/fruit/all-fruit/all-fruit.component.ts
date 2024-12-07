@@ -7,7 +7,6 @@ import { Fruit } from '../../types/fruits';
 import { ApiService } from '../../api.service';
 
 
-
 @Component({
   selector: 'app-all-fruit',
   standalone: true,
@@ -18,7 +17,7 @@ import { ApiService } from '../../api.service';
 export class AllFruitComponent implements OnInit{
   fruits: Fruit[] = [];
   isLoading = true;
-  
+   
   constructor(private apiService: ApiService) {}
 
   ngOnInit() {
@@ -26,5 +25,7 @@ export class AllFruitComponent implements OnInit{
       this.fruits = fruits;
       this.isLoading = false;
     });
+
   }
+
 }

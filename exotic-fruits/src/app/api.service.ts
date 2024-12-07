@@ -53,8 +53,9 @@ export class ApiService {
 
   createFruit(fruitName: string, postText: string) {
     const { apiUrl } = environment;
-    const payload = { fruitName, postText };
+    const payload = { fruitName,  postText };
     return this.http.post<Fruit>(`${apiUrl}/fruits`, payload);
+   
   }
 }
 
