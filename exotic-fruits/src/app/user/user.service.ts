@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { UserForAuth } from '../types/user';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -36,5 +37,29 @@ export class UserService {
   logout() {
     this.user = null;
     localStorage.removeItem(this.USER_KEY);
+  }
+
+  register(
+    username: string,
+    email: string,
+    phoneNumber: string,
+    password: string,
+    rePassword: string
+  ): Observable<UserForAuth> {
+    const newUser: UserForAuth = {
+      firstName: username,
+      email: email,
+      phoneNumber: phoneNumber,
+      password: password,
+      id: this.generateUserId(),
+    };
+
+    this.user = newUser;
+    localStorage.setItem(this.USER_KEY, JSON.stringify(newUser));
+    return of(newUser);
+  }
+
+  private generateUserId(): string {
+    return Math.random().toString(36).substr(2, 9);
   }
 }

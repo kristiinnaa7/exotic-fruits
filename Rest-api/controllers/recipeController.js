@@ -1,14 +1,24 @@
 const { userModel, fruitModel, recipeModel } = require('../models');
 
 function newRecipe(name, ingredients, userId) {
-    return recipeModel.create({ name, ingredients, userId })
-        .then(recipe => {
+    if (!mongoose.Types.ObjectId.isValid(userId)) {
+        return Promise.reject(new Error('Invalid user ID!'));
+    }
+
+    return userModel.findById(userId).then((user) => {
+        if (!user) {
+            throw new Error('User not found!');
+        }
+
+        return recipeModel.create({ name, ingredients, userId }).then((recipe) => {
             return userModel.updateOne(
                 { _id: userId },
                 { $push: { recipes: recipe._id } }
             );
         });
+    });
 }
+
 
 function getLatestRecipes(req, res, next) {
     const limit = Number(req.query.limit) || 0;
@@ -16,7 +26,6 @@ function getLatestRecipes(req, res, next) {
     recipeModel.find()
         .sort({ created_at: -1 })
         .limit(limit)
-        .populate('userId')
         .then(recipes => {
             res.status(200).json(recipes);
         })
@@ -24,10 +33,9 @@ function getLatestRecipes(req, res, next) {
 }
 
 function createRecipe(req, res, next) {
-    const { _id: userId } = req.user;
     const { name, ingredients } = req.body;
 
-    newRecipe(name, ingredients, userId)
+    newRecipe(name, ingredients)
         .then(() => res.status(200).json({ message: 'Recipe created successfully!' }))
         .catch(next);
 }

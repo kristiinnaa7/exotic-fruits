@@ -14,12 +14,10 @@ const recipeSchema = new mongoose.Schema(
                 required: true,
             },
         ],
-        userId: {
-            type: ObjectId,
-            ref: 'User', 
-            required: false,
-        },
-       
+        imageUrl: {
+            type: String,  
+            required: false,  
+          },
     },
     { timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' } } 
 );

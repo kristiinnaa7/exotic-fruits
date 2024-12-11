@@ -47,10 +47,7 @@ const recipes = [
 
 async function seedRecipes() {
     try {
-        await mongoose.connect('mongodb://localhost:27017/exotic-fruits', {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
+        await mongoose.connect('mongodb://localhost:27017/exotic-fruits');
 
         console.log('Database connected successfully.');
 

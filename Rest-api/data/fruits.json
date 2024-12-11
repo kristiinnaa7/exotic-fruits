@@ -1,0 +1,106 @@
+{
+    "5a20c4ec-a345-4c0d-9064-ee457f184f34": {
+        "data": {
+            "owner": "john.doe@abv.bg",
+            "name": "Mangosteen",
+            "make": "Malaysia",
+            "type": "Mangosteen",
+            "imageUrl": "assets/mangosteen1.jpg",
+            "base64": [],
+            "description": "Known as the queen of fruits, mangosteen has a sweet and tangy flavor. Its thick purple rind hides juicy white segments inside. Refreshing and aromatic.",
+            "addedBy":["john.doe@abv.bg"]
+        },
+        "_id": "5a20c4ec-a345-4c0d-9064-ee457f184f34"
+    },
+    "6c20c4ec-a345-4c0d-9064-ee457f184f34": {
+        "data": {
+            "owner": "john.doe@abv.bg",
+            "name": "Durian",
+            "make": "Borneo",
+            "type": "Durian",
+            "imageUrl": "assets/durian.jpg",
+            "description": "Called the king of fruits, durian has a strong smell and creamy flesh. Its taste ranges from sweet to savory. A favorite in Southeast Asia despite its polarizing aroma.",
+            "base64": [],
+            "addedBy": ["john.doe@abv.bg"]
+        },
+        "_id": "6c20c4ec-a345-4c0d-9064-ee457f184f34"
+    },
+    "66ef6aec-3731-4176-818f-412bdc34e043": {
+        "data": {
+            "owner": "peter@abv.bg",
+            "name": "Rambutan",
+            "make": "Indonesia",
+            "type": "Rambutan",
+            "imageUrl": "assets/rambutan.jpg",
+            "description": "This small fruit has a hairy shell and sweet, tangy flesh. Similar to lychee but unique in taste.",
+            "base64": [],
+            "addedBy": ["peter@abv.bg"]
+        },
+        "_id": "66ef6aec-3731-4176-818f-412bdc34e043"
+    },
+    "a20edf53b-4721-4ed2-ae2a-fce9fb61cb97": {
+        "data": {
+            "name": "Dragon Fruit",
+            "owner": "peter@abv.bg",
+            "make": "Mexico",
+            "type": "Dragon Fruit",
+            "imageUrl": "assets/dragonfruit.jpg",
+            "description": "Known as pitaya, it has vibrant skin and speckled flesh. It offers a mild, sweet taste and is often used fresh or in smoothies.",
+            "base64": [],
+            "addedBy": ["peter@abv.bg"]
+        },
+        "_id": "a9edf53b-4721-4ed2-ae2a-fce9fb61cb97"
+    },
+    "a98edf53b-4721-4ed2-ae2a-fce9fb61cb97": {
+        "data": {
+            "name": "Mango",
+            "owner": "peter@abv.bg",
+            "make": "Myanmar",
+            "type": "Mango",
+            "imageUrl": "assets/mango2.jpg",
+            "description": "A juicy tropical fruit with sweet, fibrous flesh. Popular in both savory dishes and desserts.",
+            "base64": [],
+            "addedBy": ["peter@abv.bg"]
+        },
+        "_id": "a9edf53b-4721-4ed2-ae2a-fce9fb61cb97"
+    },
+    "a96edf53b-4721-4ed2-ae2a-fce9fb61cb97": {
+        "data": {
+            "name": "Acai",
+            "owner": "peter@abv.bg",
+            "make": "Portugal",
+            "type": "Acai",
+            "imageUrl": "assets/acai.jpg",
+            "description": "A small berry with high antioxidants. It has an earthy, tangy flavor and is considered a superfood.",
+            "base64": [],
+            "addedBy": ["peter@abv.bg"]
+        },
+        "_id": "a9edf53b-4721-4ed2-ae2a-fce9fb61cb97"
+    },
+    "a88edf53b-4721-4ed2-ae2a-fce9fb61cb97": {
+        "data": {
+            "name": "Star Fruit",
+            "owner": "peter@abv.bg",
+            "make": "India",
+            "type": "Star Fruit",
+            "imageUrl": "assets/starfruit.jpg",
+            "description": "Also called carambola, star fruit is crisp and mildly sweet. Its star shape makes it popular for decoration.",
+            "base64": [],
+            "addedBy": ["peter@abv.bg"]
+        },
+        "_id": "a9edf53b-4721-4ed2-ae2a-fce9fb61cb97"
+    },
+    "a56edf53b-4721-4ed2-ae2a-fce9fb61cb97": {
+        "data": {
+            "name": "Lychee",
+            "owner": "peter@abv.bg",
+            "make": "China",
+            "type": "Lychee",
+            "imageUrl": "assets/lychee.jpg",
+            "description": "A round fruit with sweet, floral flesh. Often eaten fresh or used in desserts.",
+            "base64": [],
+            "addedBy": ["peter@abv.bg"]
+        },
+        "_id": "a9edf53b-4721-4ed2-ae2a-fce9fb61cb97"
+    }
+}

@@ -21,6 +21,7 @@ export class AddFruitComponent {
     }
 
      const { name,  description } = form.value
+     this.router.navigate(['/fruits']);
      this.apiService.createFruit(name,description).subscribe(() => {
         this.router.navigate(['/fruits'])
      });
